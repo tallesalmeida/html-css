@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Timeburner';
+    src: url('fontes/timeburnernormal.ttf') format('truetype'), url('fontes/timeburnerbold.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(98, 236, 98)
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 50px;
+   padding-right: 50px;
+   font-family: verdana;
+}
+
+header img {
+   width: 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    
+}
+
+.menu-centro {
+    margin-left: 80px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+.menu-direita {
+    margin-left: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.esquerda {
+    margin-right: 100px;
+    margin-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 50px
+}
+
+.esquerda h1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.esquerda p {
+    font-size: 14px;
+    font-family: 'Sarala', sans-serif;
+    line-height: 1.5;
+}
+
+#botao {
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(54, 49, 49);
+    width: 100px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.meio {
+   display: flex;
+   flex-direction: column;
+   margin-right: 400px;
+   margin-top: -50px;
+}
+
+.meio img {
+    width: 300px;
+    margin-left: 25px;
+}
+
+.meio h1 {
+    font-size: 80px;
+    margin-bottom: -20px;
+    margin-top: 100px;
+    font-family: 'Timeburner';
+}
+
+.meio h2 {
+    font-size: 30px;
+    font-family: 'Timeburner';
+    text-transform: uppercase;
+    margin-left: 75px;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 100px;
+    padding-right: 50px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.direita-cima {
+    height: 100px;
+    background-color: rgb(255, 255, 82);
+    margin-bottom: 90px;
+    box-shadow: 1px 1px 10px rgba(10, 10, 10, 0.822);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.direita-baixo {
+    height: 100px;
+    background-color: rgb(255, 255, 82);
+    box-shadow: 1px 1px 10px black;
+    padding: 10px;
+    text-align: left; 
+    border-radius: 10px;
+}

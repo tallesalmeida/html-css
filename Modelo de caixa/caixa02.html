@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        h2 {
+            background-color: aquamarine;
+            height: 30px;
+        }
+
+
+        #argentina:hover {
+            color:blue;
+        }
+
+        footer {
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+            border-radius: 10px 20px 30px 20px;
+        }
+
+        main {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        nav > a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: black;
+            box-shadow: 5px 3px 2px 1px black;
+
+        }
+
+        article > a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        article > a:hover {
+            color: red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Grouping Tags</h1>
+    <header>
+        <nav>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+            <a href="#">Mais conteúdos</a>
+            <a href="#">Redes sociais</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Futebol no mundo</h2>
+            <article id="flamengo"> <a href="#">Flamengo ganha a libertadores.</a></article>
+            <article id="vasco">Vasco é rebaixado.</article>
+            <article id="argentina">Argentina vence a Copa do Mundo.</article>
+        </section>
+        
+    </main>
+    <footer>
+        Desenvolvido por Talles
+    </footer>
+</body>
+</html>

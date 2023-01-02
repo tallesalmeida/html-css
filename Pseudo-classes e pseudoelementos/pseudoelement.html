@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        div > p {
+            text-align: justify;
+            color: rgb(2, 190, 190);
+            text-indent: 50px;
+        }
+
+        div > p:hover {
+            color: red;
+        }
+
+        .pabaixo:hover {
+            color: blue;
+        }
+
+        .pabaixo {
+            text-indent: 50px;
+            text-align: justify;
+            background-color: antiquewhite;
+        }
+
+        .pabaixo::before {
+            content: '✓';
+        }
+
+        .pabaixo::after {
+            content: '✓'
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta placeat sunt dolore ea voluptatem iusto ipsum a dolorum laudantium nemo deleniti ab ipsa sequi consectetur autem vel repellendus, nulla veritatis? Eum magni repudiandae laudantium minima aspernatur adipisci facere, dolor debitis doloribus fuga temporibus placeat ea nobis non. Repellat vel eaque quis sint, ullam quia est sed pariatur libero. Quos hic, nulla qui asperiores facilis quam necessitatibus laboriosam vitae voluptas suscipit. Dignissimos possimus veniam sequi laborum quod illum nisi alias numquam mollitia quas, nostrum vitae exercitationem porro vel? Ad possimus eum dolor perspiciatis sunt totam vel similique quos magni corporis.</p>
+    </div>
+    <p class="pabaixo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci modi cumque laboriosam. Expedita nam ipsa neque reiciendis molestiae, libero natus excepturi rem porro deleniti voluptatibus, sed soluta voluptatem quibusdam quidem dolorum voluptas ea facere nulla aperiam reprehenderit possimus quas? Aliquam ea sed voluptatum debitis esse ut culpa praesentium et exercitationem iure hic saepe, accusamus aspernatur magnam, vel quidem repellendus provident at minima maxime odit dignissimos ratione. Tenetur adipisci aliquid accusamus, dolor nobis natus dolorem recusandae nostrum totam mollitia sunt laborum est, rem atque aperiam culpa eius! Error, voluptate eum? Numquam, similique. Rerum deserunt molestiae voluptatum atque ullam? Dicta, numquam expedita.</p>
+</body>
+</html>

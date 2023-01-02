@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <!--Baixar imagens e videos gratuitos no site pexels.com-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <!--<video src="Video.m4v" width="300" controls></video> - Pode ser desse jeito. Mesma coisa do áudio nessa parte. O ideal é colocar todos os formatos possíveis. Caso um falhe, o navegador tentar carregar o outro. Aí fazer desse jeito:-->
+    <video controls width="250" loop>
+        <source src="Video.m4v" type="video/mp4"> <!--Vai começar tentando carregar esse arquivo.-->
+        <source src="videoo.webm" type="video/webm">
+        <source src="video.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível com o formato desse vídeo.</p> <!--Isso vai aparecer caso o navegador não carregue nenhum dos formatos.-->
+    </video>
+    <!--A questão é que esse jeito de fazer (hospedando localmente) dá muito custo pra um eventual cliente. A melhor alternativa é incorporar vídeos externos:-->
+    <h1>Vídeos do YouTube</h1>
+    <!--Clicar em compartilhar e depois em incorporar.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

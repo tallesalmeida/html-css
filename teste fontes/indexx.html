@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras coisas de fontes</title>
+    <style>
+        @font-face {
+            font-family: 'Better';
+            src: url('better.otf') format('opentype'), url('betteritalic.otf') format('opentype');
+        }
+        /*
+            Tipos de format():
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+        */
+        body {
+            font-family: 'Better';
+            font-size: 2em;
+            text-align: justify;
+        
+        }
+
+        p {
+            text-indent: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Usar o site dafont.com caso a fonte não exista no google fonts-->
+    <!--O ideal é criar uma pasta só para as fontes pra não ficar bagunçado.-->
+    <h1>Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quos tempora ducimus magni repellat, facere architecto minus libero alias eum cumque distinctio, fugiat ratione et doloribus hic reiciendis assumenda! Pariatur tenetur consequuntur dolor perspiciatis, architecto, neque hic sit at reprehenderit numquam quos ex quia consectetur odio rerum eligendi expedita eius? Nihil repellendus laborum, hic quaerat dolorem deserunt illo velit nostrum minus ipsum culpa eum iure aliquid praesentium accusamus eligendi? Voluptates laborum sequi minima sunt, explicabo assumenda similique quis illo dolores officiis tempora enim consequatur fugit. Magnam odit molestias soluta, deserunt quis maxime amet praesentium error recusandae reprehenderit velit, quo cupiditate!</p>
+</body>
+</html>
