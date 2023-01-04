@@ -7,6 +7,10 @@
     padding: 0px;
 }
 
+body{
+    min-width: 300px;
+    max-width: 100%;
+}
 header {
     background-color: black;
     color: white;
@@ -58,7 +62,7 @@ main {
 
 #p2 {
     display: inline-block; /*lembrar disso*/
-    width: 550px;
+    height: 47%;
     color: white;
     margin-left: 35px;
     margin-top: 60px;
@@ -70,7 +74,6 @@ main {
 }
 
 #secimagem2 {
-    height: 110vh;
     background: url('imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
     margin-top: 150px;
@@ -79,7 +82,7 @@ main {
 
 #p4 {
     display: inline-block; /*lembrar disso*/
-    width: 570px;
+    height: 47%;
     color: white;
     margin-left: 35px;
     margin-top: 60px;
