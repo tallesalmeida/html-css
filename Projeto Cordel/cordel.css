@@ -1,8 +1,14 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    min-height: 100vh;
 }
 
 header {
@@ -13,7 +19,9 @@ header {
 }
 
 header > h1 {
-    font: bold 106px 'Passion One';
+    font: bold 10vw 'Passion One';
+    font-variant: small-caps; /*as letras são maiúsculas mas as primeiras ficam maiores */
+    /*10vw = 10 view width -> o tamanho da fonte cresce ou diminui de acordo com o tamanho da largura.*/
 }
 
 header > h2 {
@@ -33,9 +41,12 @@ h2 > a:hover {
 
 main {
     font: 47px 'Sriracha';
-    margin-bottom: 120px;
-    margin-top: 60px;
+    padding-top: 10vh; /* significa 10% da altura da tela. vh = view height*/
+    padding-bottom: 10vh;
+    /*margin-bottom: 120px;
+    margin-top: 60px; eu tinha colocado isso antes do padding.*/
 }
+
 
 .secnormal {
     margin-left: 35px;
@@ -43,14 +54,14 @@ main {
 
 #secimagem1 {
     height: 110vh;
-    background: url('imagens/background001.jpg') center center no-repeat fixed;
+    background: url('imagens/background001.jpg') right center no-repeat fixed;
     background-size: cover;
     margin-top: 150px;
     margin-bottom: 50px;
 }
 
 #p2 {
-    display: inline-block; /*lembrar dessa merda*/
+    display: inline-block; /*lembrar disso*/
     width: 550px;
     color: white;
     margin-left: 35px;
@@ -69,7 +80,7 @@ main {
 }
 
 #p4 {
-    display: inline-block; /*lembrar dessa merda*/
+    display: inline-block; /*lembrar disso*/
     width: 570px;
     color: white;
     margin-left: 35px;
