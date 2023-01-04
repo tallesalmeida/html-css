@@ -13,16 +13,12 @@ header {
 }
 
 header > h1 {
-    font-family: 'Passion One';
-    font-weight: bold;
-    font-size: 106px;
+    font: bold 106px 'Passion One';
 }
 
 header > h2 {
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    font-weight: 100;
+    font: 100 16px Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 > a {
@@ -36,8 +32,7 @@ h2 > a:hover {
 }
 
 main {
-    font-family: 'Sriracha';
-    font-size: 47px;
+    font: 47px 'Sriracha';
     margin-bottom: 120px;
     margin-top: 60px;
 }
@@ -48,11 +43,8 @@ main {
 
 #secimagem1 {
     height: 110vh;
-    background-image: url('imagens/background001.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url('imagens/background001.jpg') center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
     margin-top: 150px;
     margin-bottom: 50px;
 }
@@ -68,13 +60,10 @@ main {
     padding-right: 5px;
 }
 
-#secimagem2{
+#secimagem2 {
     height: 110vh;
-    background-image: url('imagens/background002.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url('imagens/background002.jpg') center center no-repeat fixed;
     background-size: cover;
-    background-attachment: fixed;
     margin-top: 150px;
     margin-bottom: 50px;
 }
