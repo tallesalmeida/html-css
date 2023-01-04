@@ -36,34 +36,76 @@ h2 > a:hover {
 }
 
 main {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: -80px;
-    
-}
-
-#primeiraparte {
     font-family: 'Sriracha';
-    font-size: 22px;
+    font-size: 47px;
+    margin-bottom: 120px;
+    margin-top: 60px;
 }
 
-#segundaparte {
-    font-family: 'Sriracha';
-    font-size: 22px;
+.secnormal {
+    margin-left: 35px;
 }
 
-#terceiraparte {
-    font-family: 'Sriracha';
-    font-size: 22px;
+#secimagem1 {
+    height: 110vh;
+    background-image: url('imagens/background001.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
-#quartaparte {
-    font-family: 'Sriracha';
-    font-size: 22px;
+#p2 {
+    display: inline-block; /*lembrar dessa merda*/
+    width: 550px;
+    color: white;
+    margin-left: 35px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-#quintaparte {
-    font-family: 'Sriracha';
-    font-size: 22px;
+#secimagem2{
+    height: 110vh;
+    background-image: url('imagens/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
+#p4 {
+    display: inline-block; /*lembrar dessa merda*/
+    width: 570px;
+    color: white;
+    margin-left: 35px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding-left: 5px;
+    padding-right: 1px;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p > a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
