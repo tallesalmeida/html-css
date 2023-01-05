@@ -6,10 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas maiores</title>
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+       
+        thead {
+            background-color: rgb(92, 86, 86);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(92, 86, 86);
+        } /*O que está no th desce junto com a tabela. top: -1px pra grudar no topo. background-color igual a do thead. Facilita a visualização caso a tabela seja muito longa. Esse recurso, no momento, não funciona perfeitamente em todos os navegadores. No Google Chrome e no Edge funciona.*/
+
+        .num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: red;
+        } /*pseudo-classe nth-child() -> efeito de cor zebrada na tabela. Entre parênteses colocar de quanto em quanto eu quero pular (2n = pula uma, pinta a outra; 3n = pula duas, pinta a seguinte. e assim por diante. Pode colocar entre () os comandos odd (ímpar) e even (par)*/
+
+        tfoot {
+            background-color: rgb(92, 86, 86);
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Tabelas maiores</h1>
+    <h1>Tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes (pode usar essa semântica pra tabelas pequenas também)
+        TABLE
+            CAPTION (legenda da tabela, geralmente aparece em cima)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR,TD, TH
+    -->
+
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">1000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">1000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">1000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>3000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--scope é importante pros mecanismos de busca da internet.-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat fuga blanditiis tenetur, provident consequatur obcaecati enim eaque nostrum tempore nisi quas veritatis saepe ipsum doloremque praesentium et aspernatur magnam laudantium dolor id nesciunt ipsa temporibus voluptatem. Harum quam similique nihil rerum provident assumenda maxime officia dolorum laboriosam, eaque officiis illo incidunt qui consequuntur aliquam ratione optio a! Deserunt facere sunt reprehenderit, eius, assumenda, ex fugit quia laborum enim veritatis odio recusandae? Ipsam expedita ducimus sunt inventore non doloribus porro, in itaque, exercitationem architecto nam fuga doloremque rem optio beatae? Doloribus rem eaque reiciendis vero voluptatum impedit non tempore, libero ex eos repellendus rerum quo neque repellat consectetur asperiores accusantium quae quas earum iusto sequi dolores amet qui illo. Enim aut cupiditate numquam at id nam perspiciatis quisquam tenetur temporibus reprehenderit doloribus facilis earum quia obcaecati deleniti soluta labore nesciunt beatae ratione magnam, illo corporis molestiae dolorem! Beatae iusto earum minus quidem molestiae, quam delectus incidunt pariatur magnam facere accusantium dolore similique enim quo harum, sapiente sed ipsa placeat impedit at amet saepe deleniti maxime. Nesciunt mollitia iste voluptatem veniam hic, architecto consequuntur? Alias dolorem perferendis iusto repudiandae. Sapiente fugiat doloribus nemo atque explicabo pariatur cumque non ex nesciunt. Aut, temporibus. Harum at maxime voluptate aut deleniti, reiciendis cupiditate a ea nemo iusto corporis distinctio ipsa dolorem iure! Blanditiis voluptate voluptatum accusamus delectus aperiam, voluptates, cum perspiciatis error neque quas ducimus eum eaque saepe fugit ipsa obcaecati consectetur suscipit molestias quibusdam atque est ad. Natus dolores quasi excepturi sapiente temporibus obcaecati molestiae quam exercitationem ab aperiam aut ipsa soluta recusandae magnam delectus quo harum dolorem ad voluptatem ipsum iste incidunt, consectetur perspiciatis. Magnam sed, ipsum aperiam quam laborum recusandae iusto minima a exercitationem harum quis ipsa quia aliquid magni enim minus ab dolor, est itaque? Sunt ipsa aspernatur non sapiente suscipit earum veniam, cumque tempora nesciunt, expedita temporibus officia nobis voluptas assumenda eligendi! Vel facilis aperiam voluptatem asperiores sequi tempore amet omnis, doloribus possimus mollitia laudantium minima nisi atque cumque ipsam distinctio dicta eum consequatur cupiditate quam repellat minus. Temporibus enim accusantium obcaecati magnam recusandae, sequi repellendus nemo quibusdam sit aut eius esse error eaque! Quae, nesciunt eveniet! Ab debitis, labore placeat repudiandae distinctio, reiciendis eveniet sit eaque assumenda amet cupiditate, adipisci numquam libero quas vero recusandae! Modi sunt velit a, fugiat aspernatur nulla molestiae non obcaecati perferendis cumque temporibus laudantium. Enim iste quidem natus accusantium soluta voluptas maiores autem dolorum sint totam atque nulla vel repellendus explicabo alias, quibusdam minima ipsa at quae illum! Non praesentium et omnis officia corporis atque id tenetur fugit eligendi voluptatem quidem odit accusantium corrupti exercitationem commodi accusamus, beatae, earum, esse in distinctio vero tempore ab officiis! Quis ab maxime, ullam beatae, iste esse laborum, minus vel explicabo animi qui. Qui ipsa ducimus maiores ea. Vero odio voluptatem consequuntur corporis totam facere eius modi? Itaque facilis iure culpa magnam voluptatibus excepturi! Impedit repudiandae iusto suscipit fugit? Odio repudiandae necessitatibus vitae nam consectetur ab nulla temporibus quasi minima eos enim ducimus rerum officia, provident consequatur porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quo modi quos, laborum tempora cumque vel impedit inventore? A inventore laboriosam, eum totam velit dolorem alias quis earum accusantium nulla dolor iusto blanditiis tenetur! Ipsam eaque excepturi possimus cum, voluptate ipsum atque inventore in culpa ullam tenetur eius. Assumenda nihil iste, minus fugiat inventore animi quos veritatis, dolores, rem magnam quod. Ducimus nemo ipsa quidem minima odio autem numquam repellat recusandae qui, laborum aliquam consectetur, et amet sint blanditiis ratione corporis rem doloribus doloremque veniam incidunt est soluta. Doloribus molestiae sed voluptatibus soluta recusandae vitae nemo, ex quisquam modi repellendus, dignissimos eius minus qui blanditiis suscipit ea facere cupiditate deserunt officiis nobis? Ex vero dicta temporibus tempore qui sequi, aperiam, non impedit deserunt earum corrupti accusamus dolorum facilis unde consequuntur laudantium velit alias quasi debitis eveniet explicabo deleniti! Vero voluptas libero officiis dolorum autem? Vel enim magnam aliquid quod ex incidunt minima id, in animi non cupiditate magni! Corrupti reprehenderit nobis minima repudiandae laudantium fugit eveniet, porro aliquid quae, tempore excepturi reiciendis officia pariatur fuga amet sequi voluptas suscipit perspiciatis doloremque unde! Esse eum at labore quae soluta repellendus maiores velit quaerat vel, dolorum tenetur magnam. Ipsum magni dolore quidem earum illum iste nihil, quas deserunt excepturi et consequatur culpa aspernatur quasi reprehenderit iusto, esse eveniet nesciunt voluptatem eos vel veniam doloribus ullam repellendus repellat. Ratione harum facilis at, incidunt vero eligendi amet omnis dolor quasi! Voluptates molestias repudiandae iusto voluptas nobis soluta reprehenderit nihil odio corrupti voluptatem deserunt et dolor consectetur quam sequi unde illum ex repellat aut repellendus laudantium, voluptatum dolorem quaerat veniam? Iste, perferendis, molestiae commodi quia excepturi ullam nihil cumque adipisci, aliquam necessitatibus maxime sint odit accusamus inventore placeat a eligendi? Quis exercitationem molestias deserunt accusamus rerum officia sunt modi? Eveniet doloremque rem, nemo facere temporibus accusantium quasi voluptates consequatur, dolore soluta assumenda illo similique repudiandae ad nisi blanditiis nihil et incidunt ut illum natus earum, laudantium ducimus. Nulla eius, delectus laboriosam eum quibusdam quae quaerat odit illo? Quae reprehenderit minima dicta laboriosam, pariatur quia, consectetur, quod repellat architecto similique exercitationem tempora nihil optio sunt dolores? Id accusantium repellendus maxime officiis a ipsam nobis ab. Consectetur nesciunt exercitationem quis natus corrupti ullam beatae consequuntur incidunt iure? Tempora, quasi! Deserunt esse at aliquid illo dolor explicabo vitae ea, consequuntur cumque facilis quisquam incidunt officia aut autem quos? Nihil ab fugiat facere dolores quas est cupiditate labore, fuga, asperiores modi, ea corporis similique. Error sit corporis quia repellat dolorem nobis alias rerum, quae officia necessitatibus a qui ad maxime. Dolorum culpa aliquid aliquam saepe officia voluptatum odio, molestias accusamus modi dolores, minus omnis, vero et voluptates vel! Omnis molestiae nihil quidem soluta! Nisi laboriosam maiores minus perferendis fugit aperiam, accusantium optio quas voluptate quasi aut explicabo veniam consequatur dignissimos asperiores magni doloremque illum vel expedita accusamus error aliquid repellendus, ad itaque. Repellendus inventore voluptas aspernatur exercitationem debitis eos vero ipsa aperiam culpa possimus. Nisi earum, iste et beatae ullam odit obcaecati doloremque laboriosam atque, expedita delectus sunt voluptas?</p>
 </body>
 </html>
