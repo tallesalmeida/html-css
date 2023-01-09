@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off"> <!--action -> é o script pra onde você vai mandar os dados depois-->
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <!--Para HTML e PHP, o name é mais importante. Para JavaScript, o id é mais importante. O ideal é que os inputs tenham name e id. Paramentro for do label -> label PARA quem? Colocar o id entre as aspas. O label cria uma relação entre a palavra e o objeto (a caixa pra digitar o nome e o sobrenome). Importante usar o label.-->
+    <!--Method GET e POST -> o GET é o padrão, as coisas que você digitou no formulário aparecem na URL. No POST as coisas não aparecem. O POST não protege os dados porque ainda dá pra pegar no devtools.-->
+    <!--Usar o GET quando os dados não forem sensíveis. Se for senha de cartão, senha, etc. usar o POST. Se os dados tiverem mais de 3000bytes e se quiser fazer envio de arquivos, não dá pra usar o GET.-->
+</body>
+</html>
