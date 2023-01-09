@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="sexo" id="igenmas"> <label for="igenmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="igenfem"> <label for="igenfem">Feminino</label><br> <!--No input:radio colocar o mesmo name pros elementos. id diferente. Só escolher uma das opções.-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="estenis" id="iestenis"> <label for="iestenis">Tênis</label><br>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label><br>
+        </fieldset>
+<!--checkbox -> literalmente aparece uma caixa pra você marcar.-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
