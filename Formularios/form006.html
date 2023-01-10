@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="1">
+        </p>
+        <!--value="" -> fala onde vai começar a barra ou a cor.-->
+        <!--min e max -> por padrão a barrinha vai de 0 a 100, mas pode alterar no min e no max.-->
+        <p>
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="foto" id="ifoto"> <!--Quando usar o input file tem que usar o método POST.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
