@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*Estilo para telas*/ /*Colocar esses comentários pra você não se perder.*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
