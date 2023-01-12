@@ -1,2 +1,25 @@
 @charset "UTF-8";
 
+/*Outros dispositivos*/
+
+
+@media screen and (min-width: 768px) {
+    
+    #burguer {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav > a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    main {
+        width: 710px;
+        margin-bottom: 10px;
+    }
+}
