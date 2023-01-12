@@ -11,8 +11,8 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    background-size: cover;
+    background-color: black; /*só dá certo se o background color for azul porque aí fica da mesma cor da imagem*/
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
