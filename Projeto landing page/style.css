@@ -158,5 +158,46 @@ main p {
 
 
 @media screen and (min-width: 768px) {
+    #menu-centro {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 90px;
+        background-color: transparent;
+    }
 
+    .menu-centro-links {
+        color: black;
+    }
+
+    .menu-centro-links:hover {
+        background-color: #86e7525d;
+        border-radius: 10px;
+    }
+
+    .esquerda {
+        padding: 50px;
+    }
+    
+    main h2 {
+        text-align: left;
+    }
+
+    main p {
+        text-indent: 0px;
+        width: 300px;
+    }
+
+    #pbotao {
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    #botao {
+        margin-right: 30px;
+    }
+
+    .meio {
+        display: block;
+    }
 }
