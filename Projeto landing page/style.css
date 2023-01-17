@@ -112,7 +112,7 @@ main p {
 }
 
 .direita-cima {
-    background-color: rgba(207, 207, 27, 0.651);
+    background-color: #9999c3ce;
     margin-bottom: 40px;
     border-radius: 20px;
 }
@@ -135,7 +135,7 @@ main p {
 }
 
 .direita-baixo {
-    background-color: rgba(207, 207, 27, 0.651);
+    background-color: #9999c3ce;
     border-radius: 20px;
 }
 
@@ -158,5 +158,5 @@ main p {
 
 
 @media screen and (min-width: 768px) {
-    
+
 }
