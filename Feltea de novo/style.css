@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Timeburner';
-    src: url('/Projeto landing page/fontes/timeburnernormal.ttf') format('truetype'), url('fontes/timeburnerbold.ttf') format('truetype');
+    src: url('/Projeto landing page/fontes/timeburnernormal.ttf') format('truetype'), url('/Projeto landing page/fontes/timeburnerbold.ttf') format('truetype');
 }
 
 * {
@@ -14,27 +14,40 @@
 body {
     width: 100vw;
     height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, #F9D1CF, #7AD592);
 }
 
 .cabecalho {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 30px;
 }
 
+.cabecalho-titulo {
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-left: 34px;
+}
+
 .cabecalho-centro-links {
-    margin-right: 50px;
+    margin-right: 40px;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.cabecalho-direita {
+    margin-right: 34px;
 }
 
 .cabecalho-direita-icon {
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
-    color: red;
+    color: rgba(255, 255, 255, 0.856);
 }
 
 .principal {
@@ -42,7 +55,8 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding: 30px;
 }
 
 .conteudo-esquerda {
@@ -50,22 +64,94 @@ body {
     margin-top: 100px;
 }
 
+.conteudo-esquerda-titulo {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.conteudo-esquerda-texto {
+    font-size: 13px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.botao {
+    text-decoration: none;
+    color:white;
+    background-color: #2B2B2B;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.692);
+}
+
+.preco {
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3E3A3A;
+}
+
 .conteudo-meio {
     width: 700px;
     text-align: center;
-    margin-left: -250px;
+    margin-left: -140px;
     margin-top: -270px;
 }
 
 .conteudo-meio-titulo {
-    font-size: 120px;
+    font-size: 80px;
     font-family: 'Timeburner';
     text-transform: uppercase;
 }
 
 .conteudo-meio-subtitulo {
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Timeburner';
     text-transform: uppercase;
-    margin-top: -20px;
+    margin-top: -10px;
+}
+
+img {
+    width: 240px;
+    margin-bottom: -270px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.conteudo-direita-cima {
+    background-color: #FFED8E;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.37);
+}
+
+.texto-direita-cima {
+    text-align: left;
+    color: #045256;
+    line-height: 2;
+}
+
+.conteudo-direita-baixo {
+    background-color: #FFED8E;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 90px;
+    border-radius: 15px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.37);
+}
+
+.texto-direita-baixo {
+    color: #045256;
+    line-height: 2;
 }
