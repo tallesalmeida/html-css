@@ -10,54 +10,47 @@
 </head>
 
 <body>
-    <div>
-        <header>
-            <h1>Feltea</h1>
-            <nav id="menu-direita">
-                <a class="menu-direita-icons" href="#"><span class="material-symbols-rounded">
-                    person
-                    </span></a>
-                <a class="menu-direita-icons" href="#"><span class="material-symbols-rounded">
-                    search
-                    </span></a>
-            </nav>
-        </header>
-        <nav id="menu-centro">
-            <a class="menu-centro-links" href="#">Sabores</a>
-            <a class="menu-centro-links" href="#">Loja</a>
-            <a class="menu-centro-links" href="#">Blog</a>
-            <a class="menu-centro-links" href="#">Sobre nós</a>
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">Feltea</h1>
+        <nav class="cabecalho-centro">
+            <a class="cabecalho-centro-links" href="#">Sabores</a>
+            <a class="cabecalho-centro-links" href="#">Loja</a>
+            <a class="cabecalho-centro-links" href="#">Blog</a>
+            <a class="cabecalho-centro-links" href="#">Sobre nós</a>
         </nav>
-    </div>
-    <main>
-        <div class="esquerda">
-            <h2>Now taking online ordres!</h2>
-            <p>Green tea has been show to improve blood flow and lower cholesterol.
+        <nav class="cabecalho-direita">
+            <a class="cabecalho-direita-icon" href="#">Ícone</a>
+            <a class="cabecalho-direita-icon"  href="#">Ícone</a>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <div class="conteudo-esquerda">
+            <h2 class="conteudo-esquerda-titulo">Now taking online ordres!</h2>
+            <p class="conteudo-esquerda-texto">Green tea has been show to improve blood flow and lower cholesterol.
                 A 2013 review of many studies found green tea helped prevent a range
                 of heart-related issues, from high blood pressure to congestive heart
                 failure. what's good for the heart is usually good for the brain; your
                 brain needs healthy blood vessels, too.</p>
-            <p id="pbotao"><button id="botao">Add to Cart</button>$4.97/kg</p> 
+            <a class="botao" href="#">Add to cart</a>
+            <span class="preco">$4.97/kg</span>
         </div>
-
-        <div class="meio">
-            <h1>Feltea</h1>
-            <h2>Green Tea</h2>
-            <!--<img src="CHA-VERDE.png" alt="Chá verde">-->
+        <div class="conteudo-meio">
+            <h1 class="conteudo-meio-titulo">Feltea</h1>
+            <h2 class="conteudo-meio-subtitulo">Green Tea</h2>
+            <p>Imagem</p>
         </div>
-
-        <div class="direita">
-            <div class="direita-cima">
-                <p id="ingre">Ingredientes</p> 
-                <p id="org">100% orgânico</p> 
+        <div class="conteudo-direita">
+            <div class="conteudo-direita-cima">
+                <p class="texto-direita-cima">Ingredientes</p>
+                <p class="texto-direita-cima">100% orgânico</p>
             </div>
-            <div class="direita-baixo">
-                <p id="sab">Sabores </p>
-                <p id="var">9 variantes</p>
+            <div class="conteudo-direita-baixo">
+                <p class="texto-direita-baixo">Sabores</p>
+                <p class="texto-direita-baixo">9 variantes</p>
             </div>
         </div>
     </main>
-
 </body>
 
 </html>
